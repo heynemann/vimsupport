@@ -1,5 +1,5 @@
 colorscheme molokai
-set guifont=DejaVuSansMono:h12
+set guifont=DejaVuSansMono:h14
 
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
@@ -87,4 +87,7 @@ nnoremap <C-l> <C-w>l
 
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
 
-map <leader>S ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:noh<CR>
+nmap <silent> <c-n> :NERDTreeToggle<CR>
+
+:nmap <F7> :g#\({\n\)\@<=#.,/}/sort<CR>
+:command! SortCSSBraceContents :g#\({\n\)\@<=#.,/}/sort
