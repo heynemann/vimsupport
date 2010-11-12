@@ -93,3 +93,5 @@ nmap <silent> <c-n> :NERDTreeToggle<CR>
 :command! SortCSSBraceContents :g#\({\n\)\@<=#.,/}/sort
 
 let g:user_zen_leader_key = "<c-k>"
+
+au BufNewFile,BufRead *.less set filetype=less
