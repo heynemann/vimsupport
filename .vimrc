@@ -91,3 +91,5 @@ nmap <silent> <c-n> :NERDTreeToggle<CR>
 
 :nmap <F7> :g#\({\n\)\@<=#.,/}/sort<CR>
 :command! SortCSSBraceContents :g#\({\n\)\@<=#.,/}/sort
+
+let g:user_zen_leader_key = "<c-k>"
