@@ -87,6 +87,7 @@ nnoremap <C-l> <C-w>l
 
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
 
+<<<<<<< Updated upstream
 nmap <silent> <c-n> :NERDTreeToggle<CR>
 
 :nmap <F7> :g#\({\n\)\@<=#.,/}/sort<CR>
@@ -95,3 +96,8 @@ nmap <silent> <c-n> :NERDTreeToggle<CR>
 let g:user_zen_leader_key = "<c-k>"
 
 au BufNewFile,BufRead *.less set filetype=less
+=======
+map <leader>S ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:noh<CR>
+
+map <leader>cd :cd %:p:h<CR>
+>>>>>>> Stashed changes
