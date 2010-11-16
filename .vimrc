@@ -89,9 +89,5 @@ set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
 
 nmap <silent> <c-n> :NERDTreeToggle<CR>
 
-:nmap <F7> :g#\({\n\)\@<=#.,/}/sort<CR>
-:command! SortCSSBraceContents :g#\({\n\)\@<=#.,/}/sort
-
-let g:user_zen_leader_key = "<c-k>"
-
 au BufNewFile,BufRead *.less set filetype=less
+
