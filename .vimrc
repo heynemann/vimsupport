@@ -1,5 +1,5 @@
 colorscheme molokai
-set guifont=DejaVuSansMono:h14
+set guifont=DejaVuSansMono\ 14
 
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
@@ -15,6 +15,7 @@ set modelines=0
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+set number
 set expandtab
 
 let mapleader = ","
