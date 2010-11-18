@@ -92,3 +92,7 @@ nmap <silent> <c-n> :NERDTreeToggle<CR>
 
 au BufNewFile,BufRead *.less set filetype=less
 
+#set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+
