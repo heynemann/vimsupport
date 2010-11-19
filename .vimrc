@@ -8,6 +8,8 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
+autocmd FileType python compiler pylint
+
 set nocompatible
 
 set modelines=0
