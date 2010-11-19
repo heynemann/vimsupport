@@ -1,5 +1,5 @@
 colorscheme molokai
-set guifont=DejaVuSansMono:h14
+set guifont=DejaVuSansMono\ 14
 
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
@@ -17,6 +17,7 @@ set modelines=0
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+set number
 set expandtab
 
 let mapleader = ","
@@ -92,4 +93,12 @@ set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
 nmap <silent> <c-n> :NERDTreeToggle<CR>
 
 au BufNewFile,BufRead *.less set filetype=less
+
+"set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+
+augroup mkd
+    autocmd BufRead *.mkd set ai formatoptions=tcroqn2 comments=n:&gt;
+augroup END
 
