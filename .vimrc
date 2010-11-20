@@ -97,8 +97,10 @@ set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 
 augroup mkd
-    autocmd BufRead *.mkd set ai formatoptions=tcroqn2 comments=n:&gt;
-    autocmd BufRead *.md set ai formatoptions=tcroqn2 comments=n:&gt;
-    autocmd BufRead *.markdown set ai formatoptions=tcroqn2 comments=n:&gt;
+    autocmd BufRead,BufEnter *.mkd set ai formatoptions=tcroqn2 comments=n:&gt;
+    autocmd BufRead,BufEnter *.md set ai formatoptions=tcroqn2 comments=n:&gt;
+    autocmd BufRead,BufEnter *.markdown set ai formatoptions=tcroqn2 comments=n:&gt;
 augroup END
+
+
 
