@@ -104,5 +104,4 @@ augroup mkd
     autocmd BufRead,BufEnter *.markdown set ai formatoptions=tcroqn2 comments=n:&gt;
 augroup END
 
-
-
+nmap <silent> <Leader>y :CommandTFlush<CR>
