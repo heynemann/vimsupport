@@ -105,3 +105,7 @@ augroup mkd
 augroup END
 
 nmap <silent> <Leader>y :CommandTFlush<CR>
+
+nmap <C-r> :FindFileCache .<CR>
+nmap <C-f> :FindFile<CR>
+nmap <C-s> :FindFileSplit<CR> 
