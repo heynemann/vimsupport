@@ -1,3 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/heynemann/dev/beahero/beahero/handlers'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/globo/dev/agora'
+let g:netrw_dirhist_2='/Users/globo/dev/agora/src'
+let g:netrw_dirhist_3='/Users/globo/dev/libby'
+let g:netrw_dirhist_4='/Users/globo/dev'
+let g:netrw_dirhist_5='/Users/globo'
+let g:netrw_dirhist_6='/Users'

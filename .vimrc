@@ -105,3 +105,12 @@ augroup mkd
 augroup END
 
 nmap <silent> <Leader>y :CommandTFlush<CR>
+nmap <silent> <Leader>t :CommandT<CR>
+
+" Removes trailing spaces
+function TrimWhiteSpace()
+  %s/\s*$//
+  ''
+:endfunction
+
+map <F2> :call TrimWhiteSpace()<CR>
