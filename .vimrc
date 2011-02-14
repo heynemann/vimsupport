@@ -1,5 +1,18 @@
 colorscheme molokai
-set guifont=DejaVuSansMono\ 14
+
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 30
+  elseif has("gui_photon")
+    set guifont=Inconsolata:s30
+  elseif has("gui_kde")
+    set guifont=Inconsolata/30/-1/5/50/0/0/0/1/0
+  elseif has("x11")
+    set guifont=-*-inconsolata-medium-r-normal-*-*-180-*-*-m-*-*
+  else
+    set guifont=Inconsolata:h30
+  endif
+endif
 
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
@@ -105,7 +118,12 @@ augroup mkd
 augroup END
 
 nmap <silent> <Leader>y :CommandTFlush<CR>
+nmap <silent> <Leader>t :CommandT<CR>
 
-nmap <C-r> :FindFileCache .<CR>
-nmap <C-f> :FindFile<CR>
-nmap <C-s> :FindFileSplit<CR> 
+" Removes trailing spaces
+function TrimWhiteSpace()
+  %s/\s*$//
+  ''
+:endfunction
+
+map <F2> :call TrimWhiteSpace()<CR>
