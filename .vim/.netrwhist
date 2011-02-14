@@ -1,11 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/globo/dev/agora'
-let g:netrw_dirhist_2='/Users/globo/dev/agora/src'
-let g:netrw_dirhist_3='/Users/globo/dev/libby'
-let g:netrw_dirhist_4='/Users/globo/dev'
-let g:netrw_dirhist_5='/Users/globo'
-let g:netrw_dirhist_6='/Users'
-let g:netrw_dirhist_7='/Users/globo/dev/carrera'
-let g:netrw_dirhist_8='/Users/globo/dev/betasyncr'
-let g:netrw_dirhist_9='/Users/globo/dev/betasyncr/src'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/globo/dev/betasyncr/src'
+let g:netrw_dirhist_2='/Users/globo/dev/entretenimento'
+let g:netrw_dirhist_3='/Users/globo/dev/betasyncr'
+let g:netrw_dirhist_4='/Users/globo/dev/betasyncr/src'
+let g:netrw_dirhist_5='/Users/globo/dev/vagrant-centos'
