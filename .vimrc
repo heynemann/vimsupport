@@ -127,3 +127,5 @@ function TrimWhiteSpace()
 :endfunction
 
 map <F2> :call TrimWhiteSpace()<CR>
+map <F1> :tabnew<CR> 
+set t_vb= 
