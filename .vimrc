@@ -1,8 +1,9 @@
+set t_vb= 
 colorscheme molokai
 
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=Inconsolata\ 30
+    set guifont=Inconsolata\ 18
   elseif has("gui_photon")
     set guifont=Inconsolata:s30
   elseif has("gui_kde")
@@ -43,7 +44,6 @@ set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest
-set visualbell
 set cursorline
 set ttyfast
 set ruler
@@ -128,4 +128,3 @@ function TrimWhiteSpace()
 
 map <F2> :call TrimWhiteSpace()<CR>
 map <F1> :tabnew<CR> 
-set t_vb= 
