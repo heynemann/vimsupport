@@ -43,7 +43,6 @@ set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest
-set visualbell
 set cursorline
 set ttyfast
 set ruler
@@ -129,6 +128,3 @@ function TrimWhiteSpace()
 
 map <F2> :call TrimWhiteSpace()<CR>
 map <F1> :tabnew<CR> 
-set t_vb= 
-
-set wildignore+=*.o,*.obj,.git,*.pyc
