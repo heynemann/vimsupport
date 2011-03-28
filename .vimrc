@@ -62,7 +62,7 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 set wrap
-set textwidth=360
+set textwidth=80
 set fuopt=maxvert,maxhorz
 set formatoptions=qrn1
 
@@ -103,8 +103,6 @@ nnoremap <C-l> <C-w>l
 
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
 
-nmap <silent> <c-n> :NERDTreeToggle<CR>
-
 au BufNewFile,BufRead *.less set filetype=less
 
 "set guioptions-=m  "remove menu bar
@@ -127,4 +125,4 @@ function TrimWhiteSpace()
 :endfunction
 
 map <F2> :call TrimWhiteSpace()<CR>
-map <F1> :tabnew<CR> 
+map <F1> :tabnew<CR>
